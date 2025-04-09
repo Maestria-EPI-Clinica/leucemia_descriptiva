@@ -5,20 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ejercicios de Estadística - PUJ Medicina</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
-  <div class="w-full">
-    <header class="text-center">
+<body class="bg-blue-50 text-gray-800 font-sans">
+  <div class="max-w-5xl mx-auto p-6">
+    <header class="mb-8 text-center">
       <h1 class="text-3xl font-bold text-blue-900">Pontificia Universidad Javeriana</h1>
       <h2 class="text-xl font-semibold text-blue-800">Facultad de Medicina</h2>
       <h3 class="text-lg text-blue-700">Departamento de Epidemiología Clínica y Bioestadística</h3>
       <p class="mt-4 text-lg font-medium">Presentación estadística de Datos: Ejercicios de Aplicación</p>
     </header>
 
-    <main class="space-y-6">
-      <section>
-        <h4 class="text-lg font-semibold text-blue-800">1. Datos de recuento de linfoblastos (%) en 50 pacientes con leucemia</h4>
-        <div class="grid grid-cols-10 gap-1 text-sm text-center text-gray-700 font-mono">
+    <main class="space-y-8">
+      <section class="bg-white p-6 rounded-xl shadow-md">
+        <h4 class="text-lg font-semibold text-blue-800 mb-2">1. Datos de recuento de linfoblastos (%) en 50 pacientes con leucemia</h4>
+        <div class="grid grid-cols-10 gap-2 text-sm text-center text-gray-700 font-mono">
           <div>32</div><div>25</div><div>93</div><div>78</div><div>73</div>
           <div>95</div><div>57</div><div>75</div><div>8</div><div>94</div>
           <div>93</div><div>92</div><div>85</div><div>10</div><div>56</div>
@@ -32,48 +39,50 @@
         </div>
       </section>
 
-      <section>
-        <h4 class="text-lg font-semibold text-blue-800">a. Tabla de frecuencia</h4>
+      <!-- PUNTO A -->
+      <section class="bg-white p-6 rounded-xl shadow-md">
+        <h4 class="text-lg font-semibold text-blue-800 mb-2">a. Tabla de frecuencia</h4>
         <p>
           Con los datos anteriores construya una tabla de frecuencia de <strong>5 clases</strong>. 
           Especifique la amplitud de los intervalos de manera adecuada y tabule la distribución de frecuencias. 
           Incluya <em>frecuencias simples y acumuladas</em> si corresponde.
         </p>
-        <div class="w-full h-[350px] border rounded overflow-hidden mt-2">
+        <div class="mt-4 w-full overflow-hidden rounded-lg border">
           <iframe 
-            src="https://pajaroepi.shinyapps.io/leucemia_ejercicio/"
-            class="w-full h-full" 
-            frameborder="0" 
-            allowfullscreen>
+            src="https://pajaroepi.shinyapps.io/leucemia_ejercicio/" 
+            title="Ejercicio Punto A">
           </iframe>
         </div>
       </section>
 
-      <section>
-        <h4 class="text-lg font-semibold text-blue-800">b. Recuento inferior al 62%</h4>
-        <p>¿Cuántos pacientes presentaron un recuento de linfoblastos inferior al <strong>62%</strong>?</p>
-        <div class="w-full h-[350px] border rounded overflow-hidden mt-2">
+      <!-- PUNTO B -->
+      <section class="bg-white p-6 rounded-xl shadow-md">
+        <h4 class="text-lg font-semibold text-blue-800 mb-2">b. Recuento inferior al 62%</h4>
+        <p class="mb-4">¿Cuántos pacientes presentaron un recuento de linfoblastos inferior al <strong>62%</strong>?</p>
+        <h4 class="text-md font-semibold text-blue-800 mb-2">Complete el siguiente código con su solución</h4>        
+        <div class="mt-4 w-full overflow-hidden rounded-lg border">
           <iframe 
-            src="https://pajaroepi.shinyapps.io/punto_b/"
-            class="w-full h-full" 
-            frameborder="0" 
-            allowfullscreen>
+            src="https://pajaroepi.shinyapps.io/punto_b/" 
+            title="Ejercicio Punto B">
           </iframe>
         </div>
       </section>
 
-      <section>
-        <h4 class="text-lg font-semibold text-blue-800">c. Porcentaje superior o igual al 26%</h4>
+      <!-- PUNTO C -->
+      <section class="bg-white p-6 rounded-xl shadow-md">
+        <h4 class="text-lg font-semibold text-blue-800 mb-2">c. Porcentaje superior o igual al 26%</h4>
         <p>¿Qué <strong>porcentaje de pacientes</strong> presentaron un recuento de linfoblastos superior o igual al <strong>26%</strong>?</p>
       </section>
 
-      <section>
-        <h4 class="text-lg font-semibold text-blue-800">d. Valor específico de 95%</h4>
+      <!-- PUNTO D -->
+      <section class="bg-white p-6 rounded-xl shadow-md">
+        <h4 class="text-lg font-semibold text-blue-800 mb-2">d. Valor específico de 95%</h4>
         <p>Mirando únicamente la tabla de frecuencias, reporte el número de pacientes que presentaron un recuento de linfoblastos igual al <strong>95%</strong>.</p>
       </section>
 
-      <section>
-        <h4 class="text-lg font-semibold text-blue-800">e. Representación gráfica</h4>
+      <!-- PUNTO E -->
+      <section class="bg-white p-6 rounded-xl shadow-md">
+        <h4 class="text-lg font-semibold text-blue-800 mb-2">e. Representación gráfica</h4>
         <p>
           Utilizando solamente las <strong>frecuencias absolutas simples</strong>, construya el gráfico más adecuado 
           para representar la distribución de frecuencias de los <strong>50 pacientes</strong>.
@@ -81,7 +90,7 @@
       </section>
     </main>
 
-    <footer class="text-center mt-6 text-sm text-gray-600">
+    <footer class="text-center mt-12 text-sm text-gray-600">
       © 2025 - Departamento de Epidemiología Clínica y Bioestadística · PUJ
     </footer>
   </div>
